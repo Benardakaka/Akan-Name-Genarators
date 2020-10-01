@@ -6,7 +6,7 @@
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTj-zIYqZmdYvnk50lNOvVbaELKO53s11k7Vw&usqp=CAU");
         font-family: 'Marmelad', sans-serif;
         font-size: 30px;
-        color: red;
+        color: pink;
     }
     .container {
         background-color: none;
@@ -24,13 +24,20 @@
         float: left;
     }
     p   {
-        color: white;
+        color: blueviolet;
     }
     .panel  {
         background-color: green;
         color: aliceblue;
     }
     .form p  {
-        color: green;
+        color: blueviolet;
     }
     
+.form > button:hover{
+    background-color: rgba(25, 25, 255, .9);
+}
+.button:hover{
+    text-align: center;
+    background-color: rgba(234, 25, 255, .79);
+}
