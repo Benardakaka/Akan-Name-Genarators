@@ -1,15 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AKAN NAME PROJECT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Marmelad&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="name">
+    <h1><strong>Akan Name Genarator</strong></h1>
+   </div>
 
-    
-    <script src="js/script.js"></script>
+    <div class="container"> 
+        <div class="jumbotron">
+            <div class="row"> 
+                <h1><strong>Hello !, Hello!,what is your Akan Name</strong></h1>
+                <p>Akan names are derived from the Ghanian culture.<br>Children in Ghana are given their first name as a 'day name',which corresponds to the day in the week they wer born.<br>Here are the Ghanian day names:</p>   
+                <a href="https://en.wikipedia.org/wiki/Akan_names">Click to learn more</a><br>
+                <div class="col-md-6">   
+                    <div class="panel panel-info">     
+                        <div class="panel-heading"><strong>MALE</strong></div>
+                        <div class="panel-body">
+                            <ul>
+                                <li>Sunday:Kwasi</li>
+                                <li>Monday:Kwadwo</li>
+                                <li>Tuesday:Kwabena</li>
+                                <li>Wednesday:Kwaku</li>
+                                <li>Thursday:Yaw</li>
+                                <li>Friday:Kofi</li>
+                                <li>Saturday:kwame</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6"> 
+                    <div class="panel panel-info"> 
+                        <div class="panel-heading"><strong>FEMALE</strong></div>
+                        <div class="panel-body">
+                            <ul>
+                                <li>Sunday:Akosua</li>
+                                <li>Monday:Adwoa</li>
+                                <li>Tuesday:Abenaa</li>
+                                <li>Wednesday:Akua</li>
+                                <li>Thursday:Yaa</li>
+                                <li>Friday:Afua</li>
+                                <li>Saturday:Ama</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <form name="form" action="/submit.php" onsubmit="return day (cc,yy,mm,dd()" method="post">
+                <p>century: <input type="text" size=20 name="century"> </p><br>
+                <p> year: <input type="text" size=20 name="year"> </p><br>
+                <p>month: <input type="text" size=20 name="month"> </p><br>
+                <p>date of birth: <input type="text" size=20 name="date of birth"> </p><br>
+                <p>gender: <input type="text" size=20 name="gender"> </p><br>
+                <p><input type="submit" value="send" name="Submit">
+                    <input type="reset" value="Reset" name="Reset">
+                  </p>
+            </form>
+            <div class="form">
+                <form name="form" onsubmit="return dateakan()" method="post">
+
+                    <p>century: <input type="text" size=20 name="century" Id=Id1> </p><br>
+                    <p> year: <input type="text" size=20 name="year" Id=Id2> </p><br>
+                    <p>month: <input type="text" size=20 name="month" Id=Id3> </p><br>
+                    <p>date of birth: <input type="text" size=20 name="date of birth" Id=Id4> </p><br>
+                    <p>gender: <input type="text" size=20 name="gender" Id=Id5> </p><br>
+                    <p><input type="submit" value="send" name="Submit">
+                        <input type="reset" value="Reset" name="Reset">
+                      </p>
+                </form>
+            </div>    
+
+        </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
