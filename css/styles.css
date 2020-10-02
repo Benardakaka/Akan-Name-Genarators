@@ -1,4 +1,4 @@
-.name{
+.{
     text-align: center;
     color: black;
 }
@@ -24,7 +24,7 @@
     .col-md-5 {
         float: left;
     }
-    p   {
+    p   {name
         color: black;
     }
     .panel  {

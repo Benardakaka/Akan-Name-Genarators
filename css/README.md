@@ -1,3 +1,4 @@
+## [Akan-Name-Genarators]
 #### { a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. }, {02/10/2020}
 #### By **{BENARD AKAKA}**
 ## Description
