@@ -39,7 +39,7 @@ if (gender == "male" && result == 0) {
   } else if (gender == "female" && result == 6) {
     alert(females[6]);
   } else {
-    alert("Go on");
+    alert("check for your friend");
   }
 var cc = parseInt(prompt("Enter the century")); 
 var yy = parseInt(prompt("Enter the year"));
@@ -78,7 +78,7 @@ if (gender == "male" && result == 0) {
 } else if (gender == "female" && result == 6) {
   alert(females[6]);
 } else {
-  alert("null");
+  alert("You're claver");
 }
 
 
