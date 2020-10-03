@@ -10,7 +10,7 @@ function day (cc,yy,mm,dd){
     var be = new Date();
     be.setDate(parseInt(day));
     be.setMonth(parseInt(Month)-1);
-    phil.setFullYear(parseInt(year));
+    be.setFullYear(parseInt(year));
     var b = be.getDay();
     if(b===0){
         alert("Sunday");
