@@ -13,19 +13,19 @@ function day (cc,yy,mm,dd){
     be.setFullYear(parseInt(year));
     var b = be.getDay();
     if(b===0){
-        alert("Sunday");
+        alert("You were born on Sunday");
     }else if(b===1){
-        alert("Monday");
+        alert("You were born on Monday");
     }else if(b===2){
-        alert("Tuesday");
+        alert("You were born on Tuesday");
     }else if(b===3){
-        alert("Wednesday");
+        alert("You were born Wednesday");
     }else if(b===4){
-        alert("Thursday");
+        alert("You were born Thursday");
     }else if(b===5){
-        alert("Friday");
+        alert("You were born Friday");
     }else if(b===6){
-        alert("Saturday");
+        alert("Your born on Saturday");
     }
     if(year==""||year>2098){
         alert("insert a valid year");
@@ -34,8 +34,8 @@ function day (cc,yy,mm,dd){
     }else if(day=="" ||day>31){
         alert("Enter a valid month");
     }else if(document.getElementById("male").checked==true && document.getElementById("female").checked==false){
-        alert("Your Akan name is" + maleName[b]);
+        alert("Your Akan name is " + maleName[b]);
     }else if(document.getElementById("male").checked==false && document.getElementById("female").checked==true){
-        alert("Your Akan name is" + femaleName[b]);
+        alert("Your Akan name is " + femaleName[b]);
     }
 }
