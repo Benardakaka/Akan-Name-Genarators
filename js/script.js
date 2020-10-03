@@ -1,86 +1,41 @@
 function day (cc,yy,mm,dd){
-  return ((((cc/19)+1*cc-1)+((5*yy/4)) + ((26*(mm+1)/10)) + dd)%7)+1
-}
-function dateakan() {
-var cc = (document.getElementById("Id1").value); 
-var yy = (document.getElementById("Id2").value);
-var mm = (document.getElementById("Id3").value);
-var dd = (document.getElementById("Id4").value);
-var gender=(document.getElementById("Id5").value);
-var result=day(cc,yy,mm,dd).toFixed(); 
-var males = ["Kwasi", "kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-var females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; 
-if (gender == "male" && result == 0) {
-    alert(males[0]);
-  } else if (gender == "male" && result == 1) {
-    alert(males[1]);
-  } else if (gender == "male" && result == 2) {
-    alert(males[2]);
-  } else if (gender == "male" && result == 3) {
-    alert(males[3]);
-  } else if (gender == "male" && result == 4) {
-    alert(males[4]);
-  } else if (gender == "male" && result == 5) {
-    alert(males[5]);
-  } else if (gender == "male" && result == 6) {
-    alert(males[6]);
-  } else if (gender == "female" && result == 0) {
-    alert(females[0]);
-  } else if (gender == "female" && result == 1) {
-    alert(females[1]);
-  } else if (gender == "female" && result == 2) {
-    alert(females[2]);
-  } else if (gender == "female" && result == 3) {
-    alert(females[3]);
-  } else if (gender == "female" && result == 4) {
-    alert(females[4]);
-  } else if (gender == "female" && result == 5) {
-    alert(females[5]);
-  } else if (gender == "female" && result == 6) {
-    alert(females[6]);
-  } else {
-    alert("check for your friend");
+    return ((((cc/19)+1*cc-1)+((5*yy/4)) + ((26*(mm+1)/10)) + dd)%7)+1
   }
-var cc = parseInt(prompt("Enter the century")); 
-var yy = parseInt(prompt("Enter the year"));
-var mm = parseInt(prompt("Enter the month"));
-var dd = parseInt(prompt("Enter the date of birth"));
-var gender= prompt("your gender")
-var result=day(cc,yy,mm,dd).toFixed(); 
-var males = ["Kwasi", "kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-var females = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; 
-if (gender == "male" && result == 0) {
-  alert(males[0]);
-} else if (gender == "male" && result == 1) {
-  alert(males[1]);
-} else if (gender == "male" && result == 2) {
-  alert(males[2]);
-} else if (gender == "male" && result == 3) {
-  alert(males[3]);
-} else if (gender == "male" && result == 4) {
-  alert(males[4]);
-} else if (gender == "male" && result == 5) {
-  alert(males[5]);
-} else if (gender == "male" && result == 6) {
-  alert(males[6]);
-} else if (gender == "female" && result == 0) {
-  alert(females[0]);
-} else if (gender == "female" && result == 1) {
-  alert(females[1]);
-} else if (gender == "female" && result == 2) {
-  alert(females[2]);
-} else if (gender == "female" && result == 3) {
-  alert(females[3]);
-} else if (gender == "female" && result == 4) {
-  alert(females[4]);
-} else if (gender == "female" && result == 5) {
-  alert(females[5]);
-} else if (gender == "female" && result == 6) {
-  alert(females[6]);
-} else {
-  alert("You're claver");
+  function myClick(){
+    var year = document.getElementById("year").value;
+    var Month = document.getElementById("month").value;
+    var day = document.getElementById("day").value;
+    var maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    var femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    var be = new Date();
+    be.setDate(parseInt(day));
+    be.setMonth(parseInt(Month)-1);
+    phil.setFullYear(parseInt(year));
+    var b = be.getDay();
+    if(b===0){
+        alert("Sunday");
+    }else if(b===1){
+        alert("Monday");
+    }else if(b===2){
+        alert("Tuesday");
+    }else if(b===3){
+        alert("Wednesday");
+    }else if(b===4){
+        alert("Thursday");
+    }else if(b===5){
+        alert("Friday");
+    }else if(b===6){
+        alert("Saturday");
+    }
+    if(year==""||year>2098){
+        alert("insert a valid year");
+    }else if(Month=="" ||Month>12){
+        alert("Enter a valid month");
+    }else if(day=="" ||day>31){
+        alert("Enter a valid month");
+    }else if(document.getElementById("male").checked==true && document.getElementById("female").checked==false){
+        alert("Your Akan name is" + maleName[b]);
+    }else if(document.getElementById("male").checked==false && document.getElementById("female").checked==true){
+        alert("Your Akan name is" + femaleName[b]);
+    }
 }
-
-
-}
-

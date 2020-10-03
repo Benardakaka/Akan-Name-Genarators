@@ -18,9 +18,9 @@
             <div class="row"> 
                 <h1><strong>Hello !, Hello!,what is your Akan Name</strong></h1>
                 <p>Akan names are derived from the Ghanian culture.<br>Children in Ghana are given their first name as a 'day name',which corresponds to the day in the week they wer born.<br>Here are the Ghanian day names:</p>   
-                  <div class="button">
-                <button><a href="https://en.wikipedia.org/wiki/Akan_names">click here:</a><br></button>
-            </div>
+                  <!-- <div class="button">
+                <button><a href="https://en.wikipedia.org/wiki/Akan_names">Welcome to Wikipedia</a><br></button>
+            </div> -->
                 <div class="col-md-6">   
                     <div class="panel panel-info">     
                         <div class="panel-heading"><strong>MALE</strong></div>
@@ -57,21 +57,31 @@
         </div>
     </div>
     <div class="container">
-        <div class="jumbotron">
-            <div class="form">
-                <form name="form" onsubmit="return dateakan()" method="post">
-                    <p>century: <input type="number" size=20 name="century" Id=Id1> </p><br>
-                    <p> year: <input type="number" size=20 name="year" Id=Id2> </p><br>
-                    <p>month: <input type="n" size=20 name="month" Id=Id3> </p><br>
-                    <p>date of birth: <input type="text" size=20 name="date of birth" Id=Id4> </p><br>
-                    <p>gender: <input type="text" size=20 name="gender" Id=Id5> </p><br>
-                    <p><input type="submit" value="send" name="Submit">
-                        <input type="reset" value="Reset" name="Reset">
-                      </p> 
-                </form>
-            </div>    
-
-        </div>
+        <form name="myForm">
+            <div class="form-group">
+                <label for="year">year</label>
+                <input type="number" class="form-control" placeholder="Year" id="year">
+            </div>
+            <div class="form-group">
+                <label for="Month">Month</label>
+                <input type="number" class="form-control" placeholder="Month" id="month">
+            </div>
+            <div class="form-group">
+                <label for="Day">Day</label>
+                <input type="number" class="form-control" placeholder="Day" id="day">
+            </div>
+            <div class="radio">
+                <label class="gender">
+                    <input class="radio" type="radio" name="gender" id="male">Male
+                    <input class="radio" type="radio" name="gender" id="female">Female
+                </label>
+            </div>
+            <button type="button" class="btn-primary" onclick="myClick()">click</button>
+            <button type="button" class="btn-primary" onclick="reset">Reset</button>
+        </form>
+    </div>
+    <div class="button">
+        <button><i><a href="https://en.wikipedia.org/wiki/Akan_names">Welcome to Wikipedia</a></i></button>
     </div>
 <footer>
     <div class="footer">
