@@ -19,13 +19,13 @@ function day (cc,yy,mm,dd){
     }else if(b===2){
         alert("You were born on Tuesday");
     }else if(b===3){
-        alert("You were born Wednesday");
+        alert("You were born on Wednesday");
     }else if(b===4){
-        alert("You were born Thursday");
+        alert("You were born on Thursday");
     }else if(b===5){
-        alert("You were born Friday");
+        alert("You were born on Friday");
     }else if(b===6){
-        alert("Your born on Saturday");
+        alert("You were born on Saturday");
     }
     if(year==""||year>2098){
         alert("insert a valid year");
