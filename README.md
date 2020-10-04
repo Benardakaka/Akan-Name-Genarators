@@ -3,7 +3,7 @@
 #### By **{BENARD AKAKA}**
 ## Description
 ## Demo
-Here is a working live demo : https://github.com/Benardakaka/Akan-Name-Genarators
+Here is a working live demo : https://github.com/Benardakaka/MY-CURRICULUM-VITAE
 gkout -b improve-feature`)
 - Make the appropriate changes in the files
 - Add changes to reflect the changes made
